@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Laboratoire 4</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <!-- title -->
+  <nav class="navbar navbar-light bg-light mb-3">
+      <span class="navbar-brand mb-0 h1">ToDo.JS</span>
+  </nav>
+
+  <div class="container">
+
+    <!-- Register User -->
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome</h1>
+      <p class="lead">Please click the button above in order to create a user id.</p>
+      <button class="btn btn-dark btn-lg" id="register-btn">Register</button>
+    </div>
+
+    <!-- Tasks -->
+    <div id="todo">
+      <h1 class="display-4">Your tasks :</h1>
+      <ul id="tasks" class="list-group"></ul>
+      
+      <!-- Form to add tasks -->
+      <form class="form-inline mt-2">
+        <label for="task" class="sr-only">Task</label>
+        <input type="text" class="form-control" id="task" placeholder="Enter task">
+        <button id="add-btn" class="btn btn-dark mb-2">Add</button>
+        <button id="cancel-btn" class="btn btn-danger mb-2">Cancel</button>
+      </form>
+      <small class="form-text text-muted">
+        Fill in the following form and click the add button to submit your new task and add it to your todo list.
+      </small>
+    </div>
+      
+  </div>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Laboratoire 4</span>
+    </div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
